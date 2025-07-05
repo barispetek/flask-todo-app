@@ -7,6 +7,12 @@
 </head>
 <body class="bg-light">
     <div class="container mt-5">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4>Welcome, {{ current_user.username }} 👋</h4>
+            <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">Logout</a>
+        </div>
+
         <div class="card shadow">
             <div class="card-body">
                 <h1 class="card-title text-center mb-4">📝 ToDo Application</h1>
@@ -23,7 +29,7 @@
                             <a href="{{ url_for('delete', id=task.id) }}" class="btn btn-sm btn-danger">Delete</a>
                         </li>
                     {% else %}
-                        <li class="list-group-item">No tasks have been added yet.</li>
+                        <li class="list-group-item">No tasks added yet.</li>
                     {% endfor %}
                 </ul>
             </div>
