@@ -23,11 +23,6 @@ It allows users to add and delete tasks, with all data stored in a local SQLite 
 
 ---
 
-## 📷 Screenshot
-
-*(You can add a screenshot of your app running here.)*
-
----
 
 ## 💻 Installation & Usage
 
