@@ -1,16 +1,19 @@
-# 📝 Flask ToDo App with SQLite
+# 📝 Flask ToDo App with User Authentication
 
-This is a simple yet functional ToDo web application built using Python and Flask.  
-It allows users to add and delete tasks, with all data stored in a local SQLite database.
+A full-featured ToDo web application built using Python and Flask.  
+Users can register, log in, add tasks, delete them, and manage their personal to-do list securely.
 
 ---
 
 ## 🚀 Features
 
-- Add new tasks
-- Delete existing tasks
-- Tasks are saved permanently using SQLite
-- Mobile-friendly and responsive design using Bootstrap 5
+- ✅ User registration & login system (Flask-Login)
+- ✅ Password hashing with Werkzeug (secure storage)
+- ✅ Add tasks (only visible to logged-in user)
+- ✅ Delete tasks
+- ✅ Logout functionality
+- ✅ Persistent task storage with SQLite
+- ✅ Mobile-friendly UI with Bootstrap 5
 
 ---
 
@@ -18,23 +21,23 @@ It allows users to add and delete tasks, with all data stored in a local SQLite 
 
 - **Python 3**
 - **Flask**
+- **Flask-Login**
 - **SQLite**
 - **HTML / Bootstrap 5**
 
 ---
 
-
 ## 💻 Installation & Usage
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/todo-flask-app.git
-cd todo-flask-app
+git clone https://github.com/barispetek/flask-todo-app.git
+cd flask-todo-app
 
-# Create and activate a virtual environment
+# (Optional) Create and activate a virtual environment
 python -m venv venv
-venv\Scripts\activate   # For Windows
-# source venv/bin/activate  # For Linux/macOS
+venv\Scripts\activate   # On Windows
+# source venv/bin/activate   # On macOS/Linux
 
 # Install dependencies
 pip install -r requirements.txt
@@ -42,5 +45,5 @@ pip install -r requirements.txt
 # Initialize the database
 python init_db.py
 
-# Run the app
+# Run the application
 python app.py
